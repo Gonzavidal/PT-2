@@ -4,7 +4,6 @@
 
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
   font-family: "Open Sans", sans-serif;
 }
@@ -12,7 +11,6 @@
 :root {
   --gray-0: #000000;
   --gray-1: #222222;
-  --gray-2: #dddddd;
   --gray-3: #fbfbfb;
   --gray-4: #ffffff;
   --primary: #8a2be2;
@@ -34,4 +32,145 @@
 html {
   font-size: 16px;
   line-height: 1.44;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  background-color: var(--secondary);
+  color: white;
+}
+
+img {
+  size: 30px;
+}
+
+.navbar a {
+  display: flex;
+  align-items: center;
+  /* Alinea verticalmente "Our Pets" con la primera card */
+  overflow: hidden;
+  background-color: var(--secondary);
+  color: white;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+/*
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+*/
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  /* Alinear las cards en la parte superior */
+}
+
+.card {
+  box-shadow: 4px 10px 10px 2px rgba(0, 0, 0, 0.2);
+  width: 320px;
+  height: 450px;
+  margin: 15px;
+  display: inline-flex;
+  justify-content: flex-end;
+  flex-direction: column;
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--secondary);
+  float: left;
+  font-weight: bold;
+  padding-right: 255px;
+}
+
+li {
+  float: left;
+}
+
+li.active {
+  text-decoration:dashed;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: white;
+  background-color: #111;
+}
+
+h1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 270px;
+}
+
+h2 {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.dogos {
+  display: flex;
+  align-items: center;
+  padding-left: 270px;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  background-color: var(--primary);
+  cursor: pointer;
+  width: 90%;
+  margin: 10px;
+  font-size: 18px;
+}
+
+a {
+  font-size: 22px;
+  color: white;
+}
+
+span {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+p {
+  margin: 20px;
 }
